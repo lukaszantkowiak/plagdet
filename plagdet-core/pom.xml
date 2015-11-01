@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>plagdet-core</artifactId>
+	<packaging>jar</packaging>
+
+	<parent>
+		<groupId>com.plagdet</groupId>
+		<artifactId>plagdet</artifactId>
+		<version>${plagdet.version}</version>
+	</parent>
+
+	<properties>
+		<antlr.version>4.5</antlr.version>
+		<junit.version>4.12</junit.version>
+		<commons.version>3.4</commons.version>
+		<guice.version>4.0</guice.version>
+		<assertj.version>3.2.0</assertj.version>
+	</properties>
+
+	<dependencies>
+		<!-- compile dependencies start -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.antlr</groupId>
+			<artifactId>antlr4</artifactId>
+			<version>${antlr.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+		<!-- compile dependencies end -->
+		<!-- test dependencies start -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<version>${assertj.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- test dependencies end -->
+	</dependencies>
+</project>
